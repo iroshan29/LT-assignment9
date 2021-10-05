@@ -1,0 +1,59 @@
+root@LT-2021-006-en:~# history
+    1  vi /etc/hostname
+    2  hostnamectl set-hostname es-master
+    3  hostname
+    4  cat /etc*release*
+    5  cat /etc/*release*
+    6  java -version
+    7  apt install openjdk-11-jdk-headless
+    8  wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+    9  apt install apt-transport-https
+   10  echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-7.x.list
+   11  apt update
+   12  apt list elasticsearch
+   13  apt list elasticsearch -a
+   14  apt install elasticsearch=7.12.0
+   15  vi /etc/elasticsearch/elasticsearch.yml
+   16  nano /etc/elasticsearch/elasticsearch.yml
+   17  systemctl enable elasticsearch
+   18  systemctl start elasticsearch
+   19  free -m
+   20  systemctl start elasticsearch
+   21  systemctl status elasticsearch
+   22  curl http://localhost:9200
+   23  ufw applist
+   24  ufw app list
+   25  ufw allow elasticsearch
+   26  ufw allow 9200
+   27  tail -f /var/log/elasticsearch/wso2-demo.log
+   28  ufw disable
+   29  tail -f /var/log/elasticsearch/wso2-demo.log
+   30  systemctl stop elasticsearch.service
+   31  systemctl start elasticsearch.service
+   32  tail -f /var/log/elasticsearch/wso2-demo.log
+   33  apt install kibana=7.12.0
+   34  nano /etc/kibana/kibana.yml
+   35  systemctl enable kibana
+   36  systemctl start kibana
+   37  systemctl status kibana
+   38  ls /var/log/kibana/kibana.log
+   39  tail -f /var/log/kibana/kibana.log
+   40  systemctl status kibana
+   41  systemctl stop kibana
+   42  systemctl start kibana
+   43  tail -f /var/log/kibana/kibana.log
+   44  nano /etc/hostname
+   45  hostnamectl set-hostname LT-2021-006-en
+   46  hostname
+   47  nano /etc/elasticsearch/elasticsearch.yml
+   48  ip addr
+   49  service status ufw
+   50  service ufw status
+   51  ufw app list
+   52  service ufw disable
+   53  history
+   54  vi /etc/elasticsearch/elasticsearch.yml
+   55  cat /etc/elasticsearch/elasticsearch.yml
+   56  history
+   57  cat /etc/kibana/kibana.yml
+   58  history

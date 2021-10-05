@@ -1,0 +1,57 @@
+root@LT-2021-006-ws:~# history
+    1  hostnamectl set-hostname LT-2021-006-ws
+    2  vi /etc/rsyslog.conf
+    3  systemctl restart syslog
+    4  tail -f /var/log/syslog
+    5  vi /etc/rsyslog.conf
+    6  apt update
+    7  apt install apache2
+    8  systemctl status apache2
+    9  vim /var/www/html/index.html
+   10  vim /etc/apache2/apache2.conf
+   11  pwd
+   12  cd /etc/filebeat/
+   13  vim filebeat.yml
+   14  cd modules.d/
+   15  ls
+   16  vim apache.yml
+   17  vim system.yml
+   18  pwd
+   19  wget https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-oss-7                                                                             .12.0-amd64.deb
+   20  dpkg -i filebeat-oss-7.12.0-amd64.deb
+   21  cd /etc/filebeat/
+   22  ls
+   23  cd modules.d/
+   24  ls
+   25  vim /etc/filebeat/filebeat.yml
+   26  filebeat modules list
+   27  filebeat modules enable apache system
+   28  filebeat modules list
+   29  ls
+   30  vim system.yml
+   31  cd ..
+   32  ls
+   33  cd modules.d/
+   34  vim system.yml
+   35  filebeat test config
+   36  filebeat test output
+   37  vim /etc/filebeat/filebeat.yml
+   38  filebeat test output
+   39  vim /etc/filebeat/filebeat.yml
+   40  systemctl restart filebeat
+   41  filebeat test output
+   42  vim /etc/filebeat/filebeat.yml
+   43  filebeat test config
+   44  filebeat test output
+   45  systemctl start filebeat
+   46  systemctl status filebeat
+   47  tail -f /var/log/apache2/access.log
+   48  systemctl status filebeat
+   49  filebeat test output
+   50  vim apache.yml
+   51  filebeat test config
+   52  filebeat test output
+   53  systemctl stop filebeat
+   54  systemctl start filebeat
+   55  systemctl status filebeat
+   56  history

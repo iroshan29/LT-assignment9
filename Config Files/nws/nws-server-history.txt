@@ -1,0 +1,49 @@
+root@LT-2021-006-nws:~# history
+    1  hostnamectl set-hostname LT-2021-006-nws
+    2  vim /etc/hostname
+    3  vi /etc/rsyslog.conf
+    4  systemctl restart syslog
+    5  tail -f /var/log/syslog
+    6  apt update
+    7  apt install nginx
+    8  ufw status
+    9  vi /var/www/html/index.nginx-debian.html
+   10  systemctl enable nginx
+   11  systemctl start nginx
+   12  vim /var/www/html/index.nginx-debian.html
+   13  cd /etc/filebeat/
+   14  ls
+   15  vim filebeat.yml
+   16  cd modules.d/
+   17  vim nginx.yml
+   18  ls
+   19  wget https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-oss-7.12.0-amd64.deb
+   20  dpkg -i filebeat-oss-7.12.0-amd64.deb
+   21  vim /etc/filebeat/filebeat.yaml
+   22  cd /etc/filebeat/
+   23  ls
+   24  vim filebeat.yml
+   25  cd modules.d/
+   26  filebeat modules enable nginx
+   27  filebeat modules list
+   28  vim nginx.yml
+   29  filebeat config test
+   30  filebeat test config
+   31  cd ..
+   32  vim filebeat.yml
+   33  filebeat test output
+   34  vim filebeat.yml
+   35  cd modules.d/
+   36  ls
+   37  vim nginx.yml
+   38  cd ..
+   39  ls
+   40  nano filebeat.yml
+   41  filebeat test config
+   42  nano filebeat.yml
+   43  filebeat test config
+   44  filebeat test output
+   45  systemctl start filebeat
+   46  systemctl status filebeat
+   47  q
+   48  history
